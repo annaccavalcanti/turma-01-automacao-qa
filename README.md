@@ -1,1 +1,0 @@
-﻿# turma-01-automacao-qa
