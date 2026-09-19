@@ -22,3 +22,6 @@ Foram criados casos de teste e constantes para utilizar as funções.
 Para verificar os erros de tipo no TypeScript sem gerar arquivos de compilação:
 ```bash
 npx tsc --noEmit
+
+### Print do Erro
+![Print do Erro de Tipo](./image1.png)
