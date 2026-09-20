@@ -25,5 +25,6 @@ npx tsc --noEmit
 ```
 
 ### Print do Erro
-<img width="819" height="199" alt="image" src="https://github.com/user-attachments/assets/6cd78223-2e61-45cc-a953-5e0759e205f7" />
+<img width="781" height="208" alt="image" src="https://github.com/user-attachments/assets/b228cefe-facd-4e43-ba65-c4c18fdb65e9" />
+
 
