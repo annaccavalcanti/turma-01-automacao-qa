@@ -47,3 +47,10 @@ console.log(descrever(primeiroCasoDeTeste));
 const casoAutomatizado = marcarAutomatizado(segundoCasoDeTeste);
 
 console.log(descrever(casoAutomatizado));
+
+const casoComErro = criarCasoDeTeste(
+    "texto",
+    "Teste com erro",
+    "Este caso possui um erro de tipo",
+    false
+);
