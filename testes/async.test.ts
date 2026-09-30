@@ -1,6 +1,5 @@
 import { expect, test } from 'vitest'
 
-// tipo da flor
 interface Flor {
   id: number
   nome: string
@@ -34,12 +33,9 @@ async function buscarFlorPorId(id: number): Promise<Flor> {
   // filtra as flores que têm o id procurado
   const encontradas = jardim.filter(flor => flor.id === id)
 
-  // se não encontrar nenhuma, lança um erro
   if (encontradas.length === 0) {
     throw new Error('Flor não encontrada')
   }
-
-  // retorna a flor encontrada
   return encontradas[0]
 }
 
@@ -65,14 +61,14 @@ test('Deve contar as flores cor-de-rosa', () => {
   expect(quantidade).toBe(4)
 })
 
-// sucesso
+// se der certo
 test('Deve buscar a flor pelo id', async () => {
   const flor = await buscarFlorPorId(1)
 
   expect(flor.nome).toBe('Peônia Cor-de-Rosa')
 })
 
-// erro
+// se der errado
 test('Deve dar erro quando o id não existe', async () => {
   await expect(buscarFlorPorId(999)).rejects.toThrow('Flor não encontrada')
 })
